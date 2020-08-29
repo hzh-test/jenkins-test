@@ -8,7 +8,7 @@ pipeline {
         }
         stage('bb') {
             steps {
-                sh 'echo "bbbbbb!";'
+                sh 'echo "bbbbbb!";exit 110'
             }
         }
         stage('cc') {
