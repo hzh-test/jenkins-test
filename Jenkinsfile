@@ -9,7 +9,7 @@ pipeline {
         stage('bb') {
             steps {
                 retry(10) {
-                    sh 'echo "bbbbbb!";exit 110'
+                    sh 'echo "bbbbbb!";'
                 }
             }
         }
