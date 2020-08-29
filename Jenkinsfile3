@@ -1,19 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('aa') {
+        stage('Test') {
             steps {
-                sh 'echo "aaaaaa!";'
-            }
-        }
-        stage('bb') {
-            steps {
-                sh 'echo "bbbbbb!";'
-            }
-        }
-        stage('cc') {
-            steps {
-                sh 'echo "cccccc!";'
+                sh 'echo "Fail!";'
             }
         }
     }
